@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./styles/colors.scss";
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body, html, input, button, textarea {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: $gray-600;
+}
+
+.container {
+  max-width: 46rem;
+  margin: 0 auto;
+}
