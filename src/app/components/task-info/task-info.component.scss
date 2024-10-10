@@ -1,0 +1,19 @@
+@import "../../../styles/colors.scss";
+
+$component: ".task-info";
+
+#{$component} {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+ &__label {
+  font-size: 14px;
+  font-weight: bold;
+
+ }
+
+ &__count {
+  
+ }
+}
