@@ -10,10 +10,15 @@ $component: ".task-info";
  &__label {
   font-size: 14px;
   font-weight: bold;
-
+  color: #fff;
  }
 
  &__count {
-  
+  color: #fff;
+  padding: .125rem .5rem;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+  background: $gray-400;
  }
 }
