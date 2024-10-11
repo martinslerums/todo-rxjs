@@ -1,0 +1,23 @@
+@import "../../../styles/colors.scss";
+
+$component: ".task-empty-list";
+
+#{$component} {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 4rem 0;
+
+
+
+ &__info {
+  font-size: 1rem;
+  color: $gray-300;
+  text-align: center;
+ }
+
+
+}
