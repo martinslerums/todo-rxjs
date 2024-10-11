@@ -1,0 +1,20 @@
+@import "../../../styles/colors.scss";
+
+$component: ".task-list-wrapper";
+
+#{$component} {
+  margin-top: 4rem;
+
+
+  &__info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  // &__list-wrapper{
+
+  // }
+
+}
