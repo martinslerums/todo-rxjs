@@ -10,13 +10,19 @@ $component: ".task-card";
   border: 1px solid $gray-500;
   padding: 1rem;
   border-radius: 0.5rem;
+  gap: 0.5rem;
 
   &__task-check {
+    accent-color: $dark-purple;
   }
 
   &__task-label {
     font-size: 14px;
     color: $gray-100;
+    &.completed {
+      text-decoration: line-through;
+      color: $gray-300;
+    }
   }
 
   &__task-delete {

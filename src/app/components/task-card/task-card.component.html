@@ -1,9 +1,17 @@
 <section class="task-card">
-  <input type="checkbox" name="check-task" class="task-card__task-check" />
-  <p class="task-card__task-label">
-    Lorem ipsum dolor sit amet consectetur adipisicing.
-  </p>
-  <button class="task-card__task-delete">
+  <input
+    type="checkbox"
+    name="check-task"
+    class="task-card__task-check"
+    [checked]="task?.completed"
+    (click)="completeTask(task?.id)"
+  />
+  <div style="width: 100%; padding: 0; margin-top: -3px">
+    <p class="task-card__task-label" [ngClass]="{ completed: task?.completed }">
+      {{ task?.title }}
+    </p>
+  </div>
+  <button class="task-card__task-delete" (click)="deleteTask(task?.id)" >
     <svg
       width="24"
       height="24"
