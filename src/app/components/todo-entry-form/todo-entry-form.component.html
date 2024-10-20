@@ -5,8 +5,9 @@
     id="todo"
     class="todo-entry-form_input"
     placeholder="Add a new task"
+    [(ngModel)]="title"
   />
-  <button class="todo-entry-form_btn">
+  <button class="todo-entry-form_btn" (click)="addTask()" >
     <span>Create</span>
     <svg
       width="16"
