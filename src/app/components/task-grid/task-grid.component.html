@@ -1,10 +1,14 @@
 <section class="task-list-wrapper">
   <div class="task-list-wrapper__info-wrapper">
-    <app-task-info/>
-    <app-task-info/>
+    <app-task-info [isBoth]="false" [total]="total" label="Tasks Created"/>
+    <app-task-info [isBoth]="true" [completed]="completed" [total]="total" label="Tasks Completed"/>
   </div>
   <div class="task-list-wrapper__list-wrapper">
-    <app-task-list/>
-    <!-- <app-task-list-empty/> -->
+    @if ($todos | async; as todos) { @if (todos.length) { @for (todo of ($todos
+    | async); track todo.id) {
+    <app-task-card [task]="todo" />
+    } } @else {
+    <app-task-list-empty />
+    } }
   </div>
 </section>

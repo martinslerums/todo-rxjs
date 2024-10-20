@@ -5,7 +5,6 @@ $component: ".task-list-wrapper";
 #{$component} {
   margin-top: 4rem;
 
-
   &__info-wrapper {
     display: flex;
     justify-content: space-between;
@@ -13,8 +12,12 @@ $component: ".task-list-wrapper";
     margin-bottom: 1.5rem;
   }
 
-  // &__list-wrapper{
+  &__list-wrapper {
+    border-top: 1px solid $gray-400;
+    border-radius: 0.5rem;
 
-  // }
-
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
 }
