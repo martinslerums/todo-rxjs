@@ -1,4 +1,9 @@
 <section class="task-info">
-  <p class="task-info__label">Tasks created</p>
-  <span class="task-info__count">5</span>
+  <p class="task-info__label" [ngClass]="{ both: isBoth }">{{ label }}</p>
+
+  @if (isBoth) {
+  <span class="task-info__count"> {{ completed }} of {{ total }} </span>
+  } @else {
+  <span class="task-info__count">{{ total }}</span>
+  }
 </section>
